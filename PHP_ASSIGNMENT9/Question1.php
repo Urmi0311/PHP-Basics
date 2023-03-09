@@ -46,7 +46,7 @@ class FileUploader
             array_pop($updatedRows);
             fclose($handle);
             if (($handle = fopen($this->phpFileTmp, "w")) !== FALSE) {
-                array_unshift($updatedRows, "1");
+                // array_unshift($updatedRows, "1");
                 foreach ($updatedRows as $row) {
                     fputcsv($handle, $row);
                 }
