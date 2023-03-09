@@ -38,7 +38,7 @@
 <center>
         <h1>READ CSV FILE USING PHP</H1>
    <div class=form>
-  <form action="/PHP_BASICS/PHP_ASSIGNMENT9/Question1.php" method="POST" enctype="multipart/form-data">
+  <form action="Question1.php" method="POST" enctype="multipart/form-data">
     <input type="file" id="php-file" name="php-file" accept=".csv" />
     <input type="submit" name="submit" value="Upload" />
 
