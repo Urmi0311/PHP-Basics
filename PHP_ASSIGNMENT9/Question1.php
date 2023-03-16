@@ -83,8 +83,8 @@ public function downloadCsv()
 // }
 
 if (isset($_POST['submit'])) {
-    $phpFile = $_FILES['php-file']['name'];
-    $phpFileTmp = $_FILES['php-file']['tmp_name'];
+    $phpFile = $_FILES['phpfile']['name'];
+    $phpFileTmp = $_FILES['phpfile']['tmp_name'];
 
     $fileUploader = new FileUploader($phpFile, $phpFileTmp);
     $fileUploader->updateCsv();
