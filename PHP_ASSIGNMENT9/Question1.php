@@ -40,13 +40,13 @@ class FileUploader
             $updatedRows = array();
 
             while (($row = fgetcsv($handle, 1000, ",")) !== FALSE) {
-                array_unshift($row, "1");
+                array_unshift($row, "New Column");
                 $updatedRows[] = $row;
             }
             array_pop($updatedRows);
             fclose($handle);
             if (($handle = fopen($this->phpFileTmp, "w")) !== FALSE) {
-                // array_unshift($updatedRows, "1");
+                array_unshift($updatedRows, "New Column");
                 foreach ($updatedRows as $row) {
                     fputcsv($handle, $row);
                 }
@@ -95,3 +95,4 @@ if (isset($_POST['submit'])) {
     $fileUploader = new FileUploader($phpFile, $phpFileTmp);
     $fileUploader->downloadCsv();
 }
+?>
