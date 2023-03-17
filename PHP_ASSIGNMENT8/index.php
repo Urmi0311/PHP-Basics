@@ -1,25 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
 <body>
+    <div>
+        <form class="form" action="Question1.php" method="post">
+            <fieldset>
+            <label class="label" for="url">Enter RssFeed Url:</label>
+            <input class="input" name="url" id="url">
+            <input class="button" type="submit" value="Submit">
+        </fieldset>
+        </form>
+    </div>
 
-  <h1>Reading rss feed using PHP</h1>
-  <style>
-    
-    #btn {
-      background: blue;
-      color: black;
-      font-weight: bold;
-      border-color: white;
-      border: 0px;
-      font-size: large;
+</body>
+<style>
+    body {
+        background: linear-gradient(90deg, rgb(128, 127, 151) 0%, rgb(168, 168, 189) 35%, rgb(207, 165, 219) 100%);
     }
 
-  </style>
-  <form action="/PHP_BASICS/PHP_ASSIGNMENT8/Question1.php" method="post">
+    .form {
+        margin: 20% 23% 10% 18%;
+        font-size: x-large;
 
-    <input type="text" name="rssurl" placeholder="enter website feed URL">
-    <input type="submit" id="btn" value="submit">
-  </form>
-</body>
+    }
+
+    .form input {
+        font-size: x-large;
+        
+    }
+</style>
+
 </html>
